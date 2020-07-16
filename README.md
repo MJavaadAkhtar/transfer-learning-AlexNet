@@ -6,6 +6,7 @@
 1. [Overview](#Overview)
 3. [Model Training](#model-training)
 3. [How To Use It](#how-to-use-it)
+4. [What to do after training?](#what-to-do-after-training?)
 
  
 ### Overview:
@@ -58,4 +59,8 @@ Change the number of distinct classes the images have. You can do that by changi
 
 Now you are ready to train your MLP-CNN model. Just run `python train.py` to train the model.
 
+### What to do after training?
+What to do after you have trained your model? well you can use `model-loader.py` to run your save model on a test set. You need to change the following variables:
+- `img_path`: Location of the test set.
+- `model_data = torch.load('changeMe')`: Location of the CNN model.
 
